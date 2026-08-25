@@ -9,7 +9,9 @@ build/
 .eggs/
 
 # Outputs — generated, not committed
-outputs/
+# Keep folder structure (.gitkeep files) but ignore PDFs
+outputs/current/*.pdf
+outputs/archive/
 *.pdf
 
 # Environment
