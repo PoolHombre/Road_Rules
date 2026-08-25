@@ -16,7 +16,7 @@ VEHICLE = {
     "notes":       "Target: 80,000-120,000 miles, clean CarFax, no rust on frame",
 }
 
-# ── STAGE 1 — LIVING INFRASTRUCTURE ──────────────────────────────────────────
+# ── STAGE 1A — LIGHTWEIGHT LIVING INFRASTRUCTURE ─────────────────────────────
 
 STAGE_1 = [
     # Insulation
@@ -25,21 +25,29 @@ STAGE_1 = [
     {"item": "Polyiso rigid foam (10 sheets)",     "category": "Insulation",    "est": 90,    "actual": None, "status": "planned"},
     {"item": "Thinsulate (40 sq ft)",              "category": "Insulation",    "est": 110,   "actual": None, "status": "planned"},
     # Framework
-    {"item": "Aluminum Unistrut P1000A (wall/ceiling)", "category": "Framework","est": 280,   "actual": None, "status": "planned"},
-    {"item": "Aluminum Unistrut P3300 (floor)",    "category": "Framework",     "est": 80,    "actual": None, "status": "planned"},
-    {"item": "Stainless hardware kit",             "category": "Framework",     "est": 60,    "actual": None, "status": "planned"},
+    {"item": "Aluminum Unistrut P1000T — 10 channel runs (wall/ceiling/floor)", "category": "Channel Grid","est": 280,   "actual": None, "status": "planned"},
+    {"item": "Stainless spring nuts, bolts, washers — all channel connections", "category": "Channel Grid","est": 80,    "actual": None, "status": "planned"},
+    {"item": "Ceiling hardpoint hardware (4x through-bolts, backing plates, seals)", "category": "Channel Grid","est": 85,    "actual": None, "status": "planned"},
     # Walls and ceiling
     {"item": "3mm bamboo plywood panels",          "category": "Walls",         "est": 320,   "actual": None, "status": "planned"},
     {"item": "Flexible bamboo slat cladding",      "category": "Walls",         "est": 180,   "actual": None, "status": "planned"},
     {"item": "ACP panels (water zones)",           "category": "Walls",         "est": 90,    "actual": None, "status": "planned"},
     {"item": "Rubio Monocoat oil finish",          "category": "Walls",         "est": 75,    "actual": None, "status": "planned"},
     # Floor
-    {"item": "Marine-grade plywood subfloor (3/4\")", "category": "Floor",      "est": 85,    "actual": None, "status": "planned"},
+    # Plywood subfloor REMOVED — lightweight first build, horse mats on van floor directly
     {"item": "Rubber horse stall mats x2 (Tractor Supply)", "category": "Floor","est": 90,    "actual": None, "status": "planned"},
     # Sleep platform
     {"item": "Hemp webbing (1\" natural, 100 ft)", "category": "Sleep",         "est": 95,    "actual": None, "status": "planned"},
+    # Lighting — 5 zones
+    {"item": "Zone 1 Ambient: LED strip 2700K + frosted channel cover (both ceiling runs)", "category": "Lighting", "est": 90, "actual": None, "status": "planned"},
+    {"item": "Zone 2 Reading: 2x adjustable LED puck lights with swivel arm (Unistrut mount)", "category": "Lighting", "est": 65, "actual": None, "status": "planned"},
+    {"item": "Zone 3 Work: LED strip 4000K neutral white (mid wall channel both sides)", "category": "Lighting", "est": 80, "actual": None, "status": "planned"},
+    {"item": "Zone 4 Night: Red LED strip low floor channel port side", "category": "Lighting", "est": 30, "actual": None, "status": "planned"},
+    {"item": "Zone 5 Exterior: 2x weatherproof LED puck lights above rear doors", "category": "Lighting", "est": 45, "actual": None, "status": "planned"},
+    {"item": "Lighting rocker panel (MASTER + 5 zone switches, Carling or Blue Sea)", "category": "Lighting", "est": 85, "actual": None, "status": "planned"},
+    # Natural fiber accents
+    {"item": "Jute rope wrap, hemp canvas curtains, linen lamp shades, storage pockets", "category": "Accents", "est": 120, "actual": None, "status": "planned"},
     {"item": "Bamboo lyocell quilted topper",      "category": "Sleep",         "est": 180,   "actual": None, "status": "planned"},
-    {"item": "DECKED VG2 full-length drawer system","category": "Sleep",        "est": 1850,  "actual": None, "status": "planned"},
     # Power — batteries
     {"item": "400Ah LiFePO4 battery bank (Battle Born or equiv)", "category": "Power", "est": 3800, "actual": None, "status": "planned"},
     {"item": "300A ANL master fuse + holder",      "category": "Power",         "est": 45,    "actual": None, "status": "planned"},

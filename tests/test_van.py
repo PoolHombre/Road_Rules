@@ -47,9 +47,9 @@ def test_all_mechanical_stages_have_required_fields():
 # ── BUDGET ────────────────────────────────────────────────────────────────────
 
 def test_stage_1_budget():
-    """Stage 1 budget must be $18,115."""
-    assert BUILD_STAGES[1]["budget"] == 18115, \
-        f"Stage 1 budget is {BUILD_STAGES[1]['budget']}, expected 18115"
+    """Stage 1A budget must be $15,800 (lightweight first build — DECKED and subfloor removed)."""
+    assert BUILD_STAGES[1]["budget"] == 15800, \
+        f"Stage 1A budget is {BUILD_STAGES[1]['budget']}, expected 15800"
 
 
 def test_stage_2_budget():
@@ -71,14 +71,15 @@ def test_stage_4_budget():
 
 
 def test_cumulative_budget_through_stage_1():
-    """Budget through Stage 1 (with vehicle) must be ~$30,115."""
+    """Budget through Stage 1A (with vehicle) must equal vehicle + stage_1 budget."""
     total = cumulative_budget(1, include_vehicle=True)
-    assert total == BUDGET["vehicle_purchase"] + BUDGET["stage_1"], \
-        f"Cumulative budget through Stage 1 is {total}"
+    expected = BUDGET["vehicle_purchase"] + BUDGET["stage_1"]
+    assert total == expected, \
+        f"Cumulative budget through Stage 1A is {total}, expected {expected}"
 
 
 def test_cumulative_budget_through_stage_3():
-    """Budget through Stage 3 (with vehicle) must be ~$45,757."""
+    """Budget through Stage 3 (with vehicle) must equal sum of vehicle + stages 1-3."""
     expected = (BUDGET["vehicle_purchase"] +
                 BUDGET["stage_1"] +
                 BUDGET["stage_2"] +

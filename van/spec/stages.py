@@ -157,8 +157,8 @@ MECHANICAL_STAGES = {
 BUILD_STAGES = {
 
     1: {
-        "name":   "Living Infrastructure",
-        "budget": 18115,
+        "name":   "Stage 1A — Lightweight Living Infrastructure",
+        "budget": 15800,
         "items": {
             "Insulation": [
                 "Dynamat Extreme — bare metal surfaces",
@@ -166,27 +166,36 @@ BUILD_STAGES = {
                 "Polyiso rigid foam — walls and ceiling cavities",
                 "Thinsulate — supplemental thermal and acoustic layer",
             ],
-            "Framework": [
-                "Aluminum Unistrut P1000A — wall and ceiling rails",
-                "Aluminum Unistrut P3300 — floor rails",
-                "All connections: stainless steel hardware",
+            "Channel Grid — Reconfigurable Interior Framework": [
+                "Aluminum Unistrut P1000T — 10 total runs (see van/spec/systems.py)",
+                "Wall channels: 3 horizontal runs per side (Low 6\", Mid 20\", High 48\")",
+                "Ceiling channels: 2 fore-aft runs (12\" from centerline each side)",
+                "Floor channels: 2 fore-aft runs (6\" from each wall)",
+                "All connections: stainless steel spring nuts, bolts, and washers",
+                "Jute rope wrap on exposed Unistrut at contact height — edge protection",
             ],
             "Walls and Ceiling": [
-                "3mm bamboo plywood panels — primary wall surface",
+                "3mm bamboo plywood panels — full wall and ceiling coverage",
                 "Flexible bamboo slat cladding — accent panels",
                 "ACP (aluminum composite panel) — water exposure zones",
                 "Acoustic panels — echo control",
                 "Rubio Monocoat — natural oil finish throughout",
+                "Hemp canvas storage pockets — hung from high wall channel, repositionable",
             ],
             "Floor": [
-                "3/4-inch marine-grade plywood subfloor",
                 "2x rubber horse stall mats (4'x6', ~$90 Tractor Supply) — removable",
+                "NO plywood subfloor — mats sit directly on van floor (lightweight first build)",
             ],
             "Sleep Platform": [
-                "Unistrut trampoline frame",
-                "1-inch natural hemp webbing grid",
-                "Bamboo lyocell quilted topper",
-                "DECKED VG2 full-length drawer system below",
+                "Unistrut perimeter frame with cross-members every 18 inches",
+                "Four legs — drop into wall channel at Low or Mid position, no tools required",
+                "Full-length — approximately 90 inches fore-aft, 48 inches wide",
+                "1-inch natural hemp webbing grid — 4-inch spacing, dual purpose:",
+                "  · Sleeping surface (with bamboo lyocell topper)",
+                "  · Load tie-down grid — cam straps hook through webbing to secure crates",
+                "Bamboo lyocell quilted topper — rolls up in cargo/chaise mode",
+                "Configurations: Flat (sleep) / Chaise (head end raised 30 degrees) / Cargo (floor clear)",
+                "NO DECKED drawer system — lightweight first build, floor storage is crates only",
             ],
             "Power": [
                 "400Ah LiFePO4 battery bank (Battle Born or equivalent)",
@@ -243,11 +252,44 @@ BUILD_STAGES = {
                 "Neutrik chassis jacks — all external audio/data ports",
                 "Amphenol connectors — field-serviceable throughout",
             ],
+            "Lighting — 5 Zones (see van/spec/systems.py for full detail)": [
+                "Zone 1 AMBIENT: LED strip 2700K warm white, both ceiling channels, frosted diffuser",
+                "Zone 2 READING: 2x adjustable LED puck lights on high wall channel at bed head",
+                "Zone 3 WORK: LED strip 4000K neutral white, mid wall channel both sides",
+                "Zone 4 NIGHT: Red LED strip, low floor channel port side — preserves night vision",
+                "Zone 5 EXTERIOR: 2x weatherproof LED puck lights above rear doors",
+                "Control panel: analog rockers near side door — MASTER + 5 zone switches",
+                "MASTER cutoff: large rocker, kills all lighting circuits — top of panel",
+            ],
+            "Load Securing": [
+                "Ceiling hardpoints: 4x through-bolted structural points above crate zone",
+                "  · Through-bolt to van roof ribs — NOT channel-only",
+                "  · Stainless 3/8\" bolts + backing plates + rubber weatherstrip seal",
+                "  · Position TBD — finalize after walls are up",
+                "Crate securing: cam straps through hemp webbing grid — no loose loads while moving",
+                "Crate selection TBD — Pelican 1650-class or equivalent, hard-sided, stackable",
+            ],
+            "Natural Fiber Accents": [
+                "Jute rope wrap on exposed Unistrut at contact height",
+                "Hemp canvas toilet privacy curtain on Unistrut slider",
+                "Linen diffuser shades on Zone 2 reading puck lights",
+                "Hemp canvas side door privacy curtain — tension rod, removable",
+                "Hemp canvas storage pockets — hung from high wall channel",
+            ],
         },
+        "deferred_to_later_stage": [
+            "DECKED VG2 drawer system (~200-275 lbs, $1,850) — heavyweight fixed storage, "
+            "deferred until first expedition reveals actual storage needs",
+            "Plywood subfloor ($85, ~40 lbs) — horse mats sit directly on van floor",
+        ],
         "notes": (
-            "Stage 1 is the foundation. No systems are installed in Stage 2-4 "
-            "that cannot be supported by the Stage 1 electrical and structural base. "
-            "The wind turbine pre-wire in Stage 1 costs $95 and saves hours of rework in Stage 3."
+            "Stage 1A is the lightweight-first build. The channel grid (Unistrut) is the "
+            "reconfigurable skeleton — everything attaches to it, nothing is fixed permanently. "
+            "The hemp webbing platform serves as both sleeping surface and load tie-down grid. "
+            "Heavy fixed storage (DECKED) is deferred until after the first expedition. "
+            "The wind turbine pre-wire costs $95 and saves hours of rework in Stage 3. "
+            "Ceiling hardpoints are structural through-bolts to van roof ribs — not channel-only. "
+            "Crate position finalized after walls are up and interior is experienced in person."
         ),
     },
 
@@ -422,7 +464,7 @@ EXTERIOR = {
 
 BUDGET = {
     "vehicle_purchase":       12000,
-    "stage_1":                18115,
+    "stage_1":                15800,  # Stage 1A — lightweight first build (was 18115, DECKED and subfloor removed)
     "stage_2":                 6550,
     "stage_3":                 9092,
     "stage_4":                 2500,

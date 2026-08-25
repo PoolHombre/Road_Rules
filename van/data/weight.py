@@ -30,11 +30,11 @@ STAGE_1_COMPONENTS = [
     # Heavy items — these drive the spring rate and brake spec
     {"item": "400Ah LiFePO4 battery bank",       "est_lbs": 110,  "actual_lbs": None},
     {"item": "Victron MultiPlus 12/3000",         "est_lbs": 14,   "actual_lbs": None},
-    {"item": "DECKED VG2 drawer system",          "est_lbs": 85,   "actual_lbs": None},
+    # DECKED VG2 REMOVED — deferred to later stage (200-275 lbs, $1,850)
     {"item": "Nature's Head composting toilet",   "est_lbs": 28,   "actual_lbs": None},
     {"item": "Insulation total (all layers)",      "est_lbs": 65,   "actual_lbs": None},
     {"item": "Bamboo wall panels + cladding",     "est_lbs": 45,   "actual_lbs": None},
-    {"item": "Plywood subfloor + horse mats",     "est_lbs": 80,   "actual_lbs": None},
+    {"item": "Horse stall mats x2 (no subfloor — mats on van floor directly)", "est_lbs": 40, "actual_lbs": None},
     {"item": "Unistrut framework (aluminum)",      "est_lbs": 35,   "actual_lbs": None},
     {"item": "Wiring, cable, connectors",         "est_lbs": 40,   "actual_lbs": None},
     {"item": "Water tank (empty)",                "est_lbs": 15,   "actual_lbs": None},
@@ -45,12 +45,15 @@ STAGE_1_COMPONENTS = [
     {"item": "CB radio, Starlink adapter, misc",  "est_lbs": 10,   "actual_lbs": None},
     {"item": "Sleep platform + hemp webbing",     "est_lbs": 20,   "actual_lbs": None},
     {"item": "Misc hardware, fasteners",          "est_lbs": 20,   "actual_lbs": None},
+    {"item": "Lighting system — 5 zones (strips, pucks, panel)", "est_lbs": 7, "actual_lbs": None},
+    {"item": "Ceiling hardpoints hardware (4x through-bolts, backing plates)", "est_lbs": 3, "actual_lbs": None},
+    {"item": "Natural fiber accents (jute, hemp canvas, linen)", "est_lbs": 4, "actual_lbs": None},
 ]
 
 # ── STAGE 2 WEIGHT ADDITIONS ──────────────────────────────────────────────────
 
 STAGE_2_COMPONENTS = [
-    {"item": "Aluminess front winch bumper",      "est_lbs": 185,  "actual_lbs": None},
+    {"item": "Aluminess front bumper 85 lbs, stock bumper removed ~85 lbs — net 0 lbs", "est_lbs": 0, "actual_lbs": None},
     {"item": "Warn VR EVO 12-S winch",            "est_lbs": 95,   "actual_lbs": None},
     {"item": "Lighting (all)",                    "est_lbs": 20,   "actual_lbs": None},
     {"item": "Recovery gear (full kit)",          "est_lbs": 55,   "actual_lbs": None},

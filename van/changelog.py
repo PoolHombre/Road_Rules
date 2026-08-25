@@ -165,5 +165,95 @@ CHANGELOG = [
         ),
     },
 
+
+    {
+        "id":       "VAN-011",
+        "date":     "2026-08",
+        "decision": "Adopted lightweight-first philosophy — Stage 1 renamed Stage 1A",
+        "reason": (
+            "Heavy fixed storage systems (DECKED VG2 drawer system, plywood subfloor) "
+            "removed from Stage 1. DECKED weighs 200-275 lbs and costs $1,850 — "
+            "the single heaviest non-essential item in the build. "
+            "A lightweight first expedition provides real data on what storage is actually needed "
+            "before committing to fixed systems. Floor storage in Stage 1A is hard-sided crates "
+            "only — flexible, repositionable, no weight penalty. "
+            "Plywood subfloor also dropped — horse stall mats sit directly on van floor. "
+            "Both items deferred to a later stage pending first-expedition experience."
+        ),
+        "alternatives_considered": [
+            "Keep DECKED — rejected: 200-275 lbs and $1,850 for a system that may not match actual needs",
+            "Lighter drawer system — rejected: still fixed weight and cost before needs are known",
+            "No storage system ever — rejected: deferred, not abandoned, will revisit after first trip",
+        ],
+    },
+
+    {
+        "id":       "VAN-012",
+        "date":     "2026-08",
+        "decision": "Unistrut channel grid expanded to 10 runs — reconfigurable interior skeleton",
+        "reason": (
+            "The channel grid (3 wall runs per side + 2 ceiling + 2 floor = 10 total) "
+            "makes the entire interior reconfigurable without tools. "
+            "Platform legs drop into wall channels at different heights for flat/chaise/cargo modes. "
+            "Lighting mounts on ceiling and high wall channels. "
+            "Structural ceiling hardpoints through-bolted to van roof ribs for load securing. "
+            "Nothing is permanent that doesn't need to be. "
+            "The contrast between industrial aluminum channel and natural bamboo/hemp surfaces "
+            "is intentional — functional skeleton, natural finish."
+        ),
+    },
+
+    {
+        "id":       "VAN-013",
+        "date":     "2026-08",
+        "decision": "Hemp webbing platform is dual-purpose: sleeping surface AND load tie-down grid",
+        "reason": (
+            "The hemp webbing grid serves two functions: "
+            "(1) sleeping surface with bamboo lyocell topper, "
+            "(2) load securing grid — cam straps hook through the webbing to secure crates. "
+            "No separate tie-down hardware needed. No loose loads while moving. "
+            "Crates are hard-sided, stackable, and secured to the webbing. "
+            "Crate position on the platform is TBD — will be finalized after walls are up "
+            "and the interior is experienced in person. "
+            "Ceiling hardpoints (4x through-bolted to van roof ribs) provide additional "
+            "securing for stacked crates — positioned above the crate zone after walls are up."
+        ),
+    },
+
+    {
+        "id":       "VAN-014",
+        "date":     "2026-08",
+        "decision": "5-zone lighting plan with analog rocker panel and master cutoff",
+        "reason": (
+            "Five lighting zones covering all interior use cases: "
+            "Zone 1 Ambient (2700K warm, ceiling channels, frosted diffuser), "
+            "Zone 2 Reading (adjustable puck lights at bed head, Unistrut-mounted), "
+            "Zone 3 Work (4000K neutral, mid wall channel, cargo mode), "
+            "Zone 4 Night (red LED floor strip, non-disruptive, preserves night vision), "
+            "Zone 5 Exterior (weatherproof pucks above rear doors, camp lighting). "
+            "Analog rocker panel near the side door — MASTER cutoff (large rocker, top position) "
+            "kills all lighting circuits. Individual zone rockers below. "
+            "Consistent with analog-first philosophy — no smart lighting, no app control. "
+            "One habit: flip master when leaving the van. Good battery discipline."
+        ),
+    },
+
+    {
+        "id":       "VAN-015",
+        "date":     "2026-08",
+        "decision": "Front bumper weight corrected — net change is ~0 lbs, not +185 lbs",
+        "reason": (
+            "Original weight estimate had Aluminess front bumper at 185 lbs with no credit "
+            "for the stock bumper removed. "
+            "Research confirmed: Aluminess front bumper for Savana/Express = 85 lbs. "
+            "Stock Savana front bumper assembly = approximately 85 lbs. "
+            "Net weight change from the bumper swap alone: approximately 0 lbs. "
+            "The winch (95 lbs) is what actually adds weight to the front axle. "
+            "Weight estimate corrected in van/data/weight.py. "
+            "Combined with DECKED removal, Stage 1A loaded weight estimate improved "
+            "by approximately 250-350 lbs vs original Stage 1 estimates."
+        ),
+    },
+
     # ── ADD NEW ENTRIES BELOW ──────────────────────────────────────────────────
 ]
