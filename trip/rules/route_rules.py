@@ -115,13 +115,13 @@ CAMP_PRIORITY = [
 
 
 CAMPING_RESOURCES = [
-    {"name": "recreation.gov",      "use": "TRNP Cottonwood, Glacier Apgar, Vedauwoo — reservation campgrounds"},
-    {"name": "onX Maps",            "use": "Find BLM/NF dispersed spots — shows land ownership boundaries — app required"},
-    {"name": "FreeRoam",            "use": "Free camping finder for the van and overlanding community — freeroam.io"},
-    {"name": "BLM Montana/Dakotas", "use": "Missouri Breaks, Miles City area, general MT/ND BLM land — blm.gov/montana-dakotas"},
-    {"name": "Bighorn NF",          "use": "Camping, fire restrictions, trail info — fs.usda.gov/bighorn"},
-    {"name": "Shoshone NF",         "use": "First national forest — Dubois/Cody area — fs.usda.gov/shoshone"},
-    {"name": "Medicine Bow NF",     "use": "Snowy Range, Vedauwoo, SE Wyoming — fs.usda.gov/mbrtb"},
-    {"name": "Flathead NF",         "use": "Glacier area — dog-friendly trails — fs.usda.gov/flathead"},
-    {"name": "InciWeb",             "use": "Fire restriction monitoring — check every morning — inciweb.nwcg.gov"},
+    {"name": "recreation.gov",      "use": "TRNP Cottonwood, Glacier Apgar, Vedauwoo — reservation campgrounds",           "where": "recreation.gov"},
+    {"name": "onX Maps",            "use": "Find BLM/NF dispersed spots — shows land ownership boundaries",                 "where": "onxmaps.com — app required"},
+    {"name": "FreeRoam",            "use": "Free camping finder for the van and overlanding community",                     "where": "freeroam.io"},
+    {"name": "BLM Montana/Dakotas", "use": "Missouri Breaks, Miles City area, general MT/ND BLM land",                     "where": "blm.gov/montana-dakotas"},
+    {"name": "Bighorn NF",          "use": "Camping, fire restrictions, trail info",                                        "where": "fs.usda.gov/bighorn"},
+    {"name": "Shoshone NF",         "use": "First national forest in America — Dubois/Cody area",                          "where": "fs.usda.gov/shoshone"},
+    {"name": "Medicine Bow NF",     "use": "Snowy Range, Vedauwoo, SE Wyoming camping",                                    "where": "fs.usda.gov/mbrtb"},
+    {"name": "Flathead NF",         "use": "Glacier area NF camping — dog-friendly trails",                                 "where": "fs.usda.gov/flathead"},
+    {"name": "InciWeb",             "use": "Fire restriction monitoring — check every morning in July/August",              "where": "inciweb.nwcg.gov"},
 ]
