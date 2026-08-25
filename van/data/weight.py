@@ -32,7 +32,12 @@ STAGE_1_COMPONENTS = [
     {"item": "Victron MultiPlus 12/3000",         "est_lbs": 14,   "actual_lbs": None},
     # DECKED VG2 REMOVED — deferred to later stage (200-275 lbs, $1,850)
     {"item": "Nature's Head composting toilet",   "est_lbs": 28,   "actual_lbs": None},
-    {"item": "Insulation total (all layers)",      "est_lbs": 65,   "actual_lbs": None},
+    {"item": "Insulation — Noico damping mat (50 sqft @ 0.12 lbs/sqft)",  "est_lbs": 6,    "actual_lbs": None},
+    {"item": "Insulation — Thinsulate SM600L (60 sqft @ 0.05 lbs/sqft)",  "est_lbs": 3,    "actual_lbs": None},
+    {"item": "Insulation — XPS rigid board (10 sheets, 1-inch)",          "est_lbs": 18,   "actual_lbs": None},
+    {"item": "Insulation — Great Stuff foam (3 cans, minimal material)",  "est_lbs": 2,    "actual_lbs": None},
+    # Note: Original estimate was 65 lbs (included Dynamat + spray foam + Polyiso + Thinsulate)
+    # New stack (Noico + XPS + Thinsulate + targeted Great Stuff): ~29 lbs — saves ~36 lbs
     {"item": "Bamboo wall panels + cladding",     "est_lbs": 45,   "actual_lbs": None},
     {"item": "Horse stall mats x2 (no subfloor — mats on van floor directly)", "est_lbs": 40, "actual_lbs": None},
     {"item": "Unistrut framework (aluminum)",      "est_lbs": 35,   "actual_lbs": None},

@@ -108,3 +108,85 @@ POWER_BUDGET = {
         "bank easily maintains itself on solar alone."
     ),
 }
+
+# ── ELECTRONICS BAY — DOG HAIR FILTRATION ────────────────────────────────────
+
+ELECTRONICS_BAY = {
+    "description": (
+        "Enclosed bay housing all Victron components. "
+        "The MultiPlus 12/3000 has an internal cooling fan — the only component "
+        "in the system that actively pulls air through itself. "
+        "Without filtration, a husky in a sealed van will load the MultiPlus "
+        "fan with hair within days. Dog hair on electronics is a thermal and "
+        "reliability risk. The electronics bay is the solution."
+    ),
+
+    "risk_map": {
+        "Victron MultiPlus 12/3000": {
+            "cooling":    "Internal fan — actively pulls air through the unit",
+            "risk":       "HIGH — fan draws dog hair into inverter/charger internals",
+            "action":     "Filtered intake vent required",
+        },
+        "Victron SmartSolar MPPT 100/50": {
+            "cooling":    "Passive heatsink only — no fan, no airflow through unit",
+            "risk":       "Low — hair accumulates on fins but does not enter unit",
+            "action":     "Enclosed bay ventilation sufficient; wipe fins periodically",
+        },
+        "Victron Orion-XS 12/12-30A": {
+            "cooling":    "Passive heatsink",
+            "risk":       "Low",
+            "action":     "Enclosed bay ventilation sufficient",
+        },
+        "Victron Lynx Distributor": {
+            "cooling":    "Passive",
+            "risk":       "None",
+            "action":     "None",
+        },
+        "Blue Sea panels": {
+            "cooling":    "Passive",
+            "risk":       "None",
+            "action":     "None",
+        },
+        "LiFePO4 battery bank": {
+            "cooling":    "Passive",
+            "risk":       "None — batteries don't care about hair",
+            "action":     "None",
+        },
+    },
+
+    "bay_construction": {
+        "material":     "3/4-inch plywood or aluminum panel — simple enclosure with removable door",
+        "location":     "Forward of the sleep platform, against the driver-side bulkhead",
+        "ventilation": {
+            "intake":   "Low position on bay wall — filtered panel vent",
+            "exhaust":  "High position on bay wall — unfiltered (exhaust, not intake)",
+            "airflow":  "Natural convection — hot air rises, no powered fan required",
+        },
+    },
+
+    "multiplus_filtration": {
+        "method":       "Filtered intake cover over the MultiPlus fan intake grille",
+        "filter_media": "Washable polyester foam filter media — same material as HVAC pre-filters",
+        "hardware":     "Computer panel filter frame, 80mm or 120mm, fits over intake grille",
+        "sources":      [
+            "Comair Rotron panel filter — available on Amazon/Digikey, $8-15 each",
+            "Or: pantyhose stretched over intake — field-proven, free, replaces in 30 seconds",
+        ],
+        "inspection":   "Every 30 days — with a husky in the van, expect fast loading",
+        "replacement":  "Wash or replace filter media. Keep 3 spares on hand.",
+        "spare_count":  3,
+    },
+
+    "thermal_note": (
+        "Every 10°C rise in electronics temperature reduces component life by ~50% "
+        "(Arrhenius equation). Dog hair blocking airflow is a direct thermal risk. "
+        "The MultiPlus is the most sensitive component to hair accumulation. "
+        "30-day filter inspection is a maintenance calendar item — not optional."
+    ),
+
+    "maintenance_schedule": {
+        "monthly":    "Inspect and clean MultiPlus intake filter",
+        "quarterly":  "Wipe MPPT and Orion heatsink fins",
+        "annually":   "Full electronics bay inspection — check all connections for corrosion",
+    },
+}

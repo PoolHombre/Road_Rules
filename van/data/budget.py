@@ -20,10 +20,16 @@ VEHICLE = {
 
 STAGE_1 = [
     # Insulation
-    {"item": "Dynamat Extreme (2 boxes)",          "category": "Insulation",    "est": 380,   "actual": None, "status": "planned"},
-    {"item": "Closed-cell spray foam (2 kits)",    "category": "Insulation",    "est": 120,   "actual": None, "status": "planned"},
-    {"item": "Polyiso rigid foam (10 sheets)",     "category": "Insulation",    "est": 90,    "actual": None, "status": "planned"},
-    {"item": "Thinsulate (40 sq ft)",              "category": "Insulation",    "est": 110,   "actual": None, "status": "planned"},
+    # Insulation — revised stack (VAN-016)
+    {"item": "Noico 80mil butyl damping mat (50 sqft)",          "category": "Insulation", "est": 110,  "actual": None, "status": "planned",
+     "notes": "Replaces Dynamat — same damping, 70% less cost. Partial coverage of resonant panels only."},
+    {"item": "3M Thinsulate SM600L (60 sqft)",                   "category": "Insulation", "est": 250,  "actual": None, "status": "planned",
+     "notes": "Cavity fill walls/ceiling/doors. Hydrophobic, removable, no vapor barrier needed."},
+    {"item": "XPS rigid foam board 1-inch (10 sheets 4x8)",      "category": "Insulation", "est": 120,  "actual": None, "status": "planned",
+     "notes": "Replaces Polyiso. Stable R5/inch at 25F. Walls, ceiling, floor. Friction-fit, removable."},
+    {"item": "Great Stuff Gaps and Cracks (3 cans)",             "category": "Insulation", "est": 25,   "actual": None, "status": "planned",
+     "notes": "Targeted void sealing only. NOT continuous spray foam application."},
+    # Closed-cell spray foam and Dynamat Extreme REMOVED — see VAN-016 and VAN-017
     # Framework
     {"item": "Aluminum Unistrut P1000T — 10 channel runs (wall/ceiling/floor)", "category": "Channel Grid","est": 280,   "actual": None, "status": "planned"},
     {"item": "Stainless spring nuts, bolts, washers — all channel connections", "category": "Channel Grid","est": 80,    "actual": None, "status": "planned"},
@@ -84,6 +90,11 @@ STAGE_1 = [
     {"item": "SIMARINE PICO battery monitor",      "category": "Monitoring",    "est": 195,   "actual": None, "status": "planned"},
     {"item": "TriMetric 2030",                     "category": "Monitoring",    "est": 145,   "actual": None, "status": "planned"},
     {"item": "Belden shielded cable + Amphenol connectors", "category": "Monitoring", "est": 120, "actual": None, "status": "planned"},
+    # Electronics bay — dog hair filtration (VAN-018)
+    {"item": "Electronics bay enclosure (plywood + aluminum panel door)", "category": "Electronics Bay", "est": 35, "actual": None, "status": "planned"},
+    {"item": "MultiPlus intake filter frames x2 + spare filter media x3",         "category": "Electronics Bay", "est": 25, "actual": None, "status": "planned",
+     "notes": "80-120mm panel filter frames. Inspect monthly. With husky, expect fast loading."},
+    {"item": "Bay ventilation grilles — intake (filtered) + exhaust (open)",      "category": "Electronics Bay", "est": 15, "actual": None, "status": "planned"},
     # Communications
     {"item": "Cobra 29 LX CB radio",               "category": "Comms",         "est": 95,    "actual": None, "status": "planned"},
     {"item": "Starlink Mini ethernet adapter",     "category": "Comms",         "est": 25,    "actual": None, "status": "planned"},

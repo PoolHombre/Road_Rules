@@ -367,3 +367,51 @@ def systems_weight():
 
 def systems_cost():
     return sum(v["cost"] for v in STAGE_1A_SUMMARY.values())
+
+# ── ELECTRONICS BAY ───────────────────────────────────────────────────────────
+
+ELECTRONICS_BAY = {
+    "description": (
+        "Simple enclosed bay for all Victron components. "
+        "Protects electronics from dog hair, dust, and moisture. "
+        "The MultiPlus 12/3000 is the only component with an internal cooling fan — "
+        "it actively pulls air and will accumulate dog hair without filtration. "
+        "All other Victron components are passively cooled."
+    ),
+    "construction": {
+        "material":   "3/4-inch plywood or 1/8-inch aluminum panel",
+        "door":       "Removable panel — tool-free access preferred (quarter-turn fasteners)",
+        "location":   "Forward of sleep platform, against driver-side bulkhead",
+        "finish":     "Paint or seal interior surfaces — no bare wood near electronics",
+    },
+    "ventilation": {
+        "intake_vent": {
+            "position":   "Low on bay wall (cool air enters at bottom)",
+            "type":       "Panel filter frame — 80-120mm with washable foam media",
+            "filter":     "Polyester foam filter media — same spec as HVAC pre-filter",
+            "sources":    "Comair Rotron panel filter ($8-15) or pantyhose (free, field-proven)",
+        },
+        "exhaust_vent": {
+            "position":   "High on bay wall (hot air exits at top)",
+            "type":       "Open grille or louvered vent — no filter on exhaust",
+            "note":       "Hot air rises naturally — no powered fan needed for this enclosure",
+        },
+    },
+    "multiplus_filter": {
+        "description": "Additional filter directly over the MultiPlus 12/3000 intake grille",
+        "reason":      "MultiPlus fan actively pulls air — highest individual risk in the system",
+        "method":      "80mm or 120mm panel filter frame mounted over fan intake grille",
+        "maintenance": "Inspect monthly. Wash or replace filter media. Keep 3 spares.",
+        "field_option":"Pantyhose over intake — free, replaces in 30 seconds, genuinely effective",
+    },
+    "maintenance": {
+        "30_day":   "Inspect and clean MultiPlus intake filter — husky hair loads it fast",
+        "90_day":   "Wipe MPPT and Orion-XS heatsink fins with dry cloth",
+        "annual":   "Full bay inspection — check all connections and terminals for corrosion",
+    },
+    "cost_estimate": 45,   # plywood/aluminum + filter frames + spare filter media
+    "weight_estimate_lbs": 6,
+}
+
+# Update summary to include electronics bay
+STAGE_1A_SUMMARY["electronics_bay"] = {"weight_lbs": 6, "cost": 45}

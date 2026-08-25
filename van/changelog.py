@@ -255,5 +255,63 @@ CHANGELOG = [
         ),
     },
 
+
+    {
+        "id":       "VAN-016",
+        "date":     "2026-08",
+        "decision": "Insulation stack overhauled — Noico + XPS + Thinsulate + targeted Great Stuff",
+        "reason": (
+            "Original stack (Dynamat + closed-cell spray foam + Polyiso + Thinsulate) "
+            "had two materials that were wrong for the build: "
+            "1. Closed-cell spray foam bonds permanently to van metal. "
+            "If wiring needs access, rust appears behind a panel, or a leak develops under the foam, "
+            "it must be chipped and scraped out by hand. A vehicle that vibrates, flexes, and "
+            "needs 20 years of maintenance access is not a house. Spray foam is the most common "
+            "regret reported by experienced van builders. Replaced with targeted Great Stuff "
+            "for void sealing only — not continuous application to van metal. "
+            "2. Polyiso loses R-value in cold. At 25F, effective R drops to ~3.5/inch vs rated 6.5/inch. "
+            "Montana overnight lows in late July at elevation routinely hit 35-45F. "
+            "Polyiso is losing half its performance exactly when it is needed most. "
+            "Replaced with XPS rigid board — R-value stable at 25F. "
+            "Dynamat replaced with Noico 80mil — same damping performance, 70% less cost and weight. "
+            "New stack: Noico (damping) + Thinsulate SM600L (cavity fill) + "
+            "XPS (continuous thermal layer) + Great Stuff (targeted voids only). "
+            "Everything is removable and inspectable. Van metal access preserved."
+        ),
+        "alternatives_considered": [
+            "Keep spray foam — rejected: permanent bond kills access forever, rust risk",
+            "Keep Polyiso — rejected: R-value collapses to 3.5/inch at 25F — Montana July mornings",
+            "Aerogel blanket — considered: R10/inch is compelling but $10-11/sqft is prohibitive for full coverage. Reserve for specific tight spots in Stage 2 if needed.",
+            "Sheep's wool — considered: natural material but same R-value as Thinsulate, moisture absorption risk, harder to source",
+        ],
+    },
+
+    {
+        "id":       "VAN-017",
+        "date":     "2026-08",
+        "decision": "Electronics bay with filtered ventilation — dog hair protection for MultiPlus",
+        "reason": (
+            "The Victron MultiPlus 12/3000 has an internal cooling fan — it actively pulls air "
+            "through the unit. A husky (Tango) in a sealed van produces continuous hair in the air. "
+            "Dog hair accumulating on the MultiPlus fan and internal components is a thermal and "
+            "reliability risk. Every 10C rise in electronics temperature reduces component life by "
+            "~50% (Arrhenius equation). "
+            "Solution: enclosed electronics bay for all Victron components. "
+            "Filtered intake vent (low position, natural convection) keeps hair out of the bay. "
+            "Additional filter directly over the MultiPlus intake grille. "
+            "Filter media: washable polyester foam, 80-120mm panel filter frames. "
+            "Field backup: pantyhose over the MultiPlus intake — free, replaces in 30 seconds, "
+            "field-proven in marine and RV applications. "
+            "Maintenance: inspect filter monthly — with a husky, expect fast loading. "
+            "The SmartSolar MPPT 100/50 and Orion-XS are passively cooled and lower risk "
+            "but benefit from the enclosed bay regardless."
+        ),
+        "alternatives_considered": [
+            "No protection — rejected: husky hair is continuous and will clog the MultiPlus fan",
+            "Powered filtered enclosure — rejected: adds complexity and power draw; natural convection is sufficient",
+            "Custom-printed fan housing (Etsy, Victron community) — available option for the MPPT if throttling becomes an issue in summer",
+        ],
+    },
+
     # ── ADD NEW ENTRIES BELOW ──────────────────────────────────────────────────
 ]

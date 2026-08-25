@@ -161,10 +161,33 @@ BUILD_STAGES = {
         "budget": 15800,
         "items": {
             "Insulation": [
-                "Dynamat Extreme — bare metal surfaces",
-                "Closed-cell spray foam — cavities and irregular surfaces",
-                "Polyiso rigid foam — walls and ceiling cavities",
-                "Thinsulate — supplemental thermal and acoustic layer",
+                # Sound damping — bare metal panels
+                "Noico 80mil butyl damping mat — all bare metal panels",
+                "  · Same damping performance as Dynamat Extreme at 70% less cost and weight",
+                "  · Adhesive-backed, partial coverage (resonant panels only, not every inch)",
+                # Cavity fill — walls, ceiling, curved surfaces, doors
+                "3M Thinsulate SM600L — all wall/ceiling cavities and door panels",
+                "  · Hydrophobic — moisture passes through, does not trap or hold",
+                "  · No vapor barrier needed — van metal is exterior-side vapor barrier",
+                "  · Removable, inspectable, does not bond to metal",
+                "  · 1.5 inch depth in cavities, 0.8 inch in doors and headliner",
+                # Continuous thermal layer — walls and ceiling
+                "XPS rigid foam board (pink/blue, e.g. Owens Corning Foamular) — walls and ceiling",
+                "  · Replaces Polyiso — R-value stable at 25°F (Polyiso degrades to R3.5 in cold)",
+                "  · 1-inch panels, cut to fit, friction-fit behind wall panels",
+                "  · Fully removable — no adhesive to metal, no permanent bond",
+                # Floor
+                "XPS rigid foam board 1-inch — floor under horse mats",
+                "  · High compressive strength — does not crush under load",
+                "  · Sits loose on van floor, horse mats hold it in place",
+                # Gap sealing — targeted only
+                "Great Stuff Gaps and Cracks foam — void sealing only (targeted, not full spray)",
+                "  · ONLY for: seam gaps between panels, penetrations, and irregular voids",
+                "  · NOT applied continuously to van metal — spray foam is permanently bonded",
+                "  · Full closed-cell spray foam application explicitly rejected:",
+                "    - Bonds permanently to van metal — kills access to wiring and rust inspection",
+                "    - Moisture trapped behind imperfect bonds causes hidden rust",
+                "    - Body shops will not work behind spray-foamed panels",
             ],
             "Channel Grid — Reconfigurable Interior Framework": [
                 "Aluminum Unistrut P1000T — 10 total runs (see van/spec/systems.py)",
