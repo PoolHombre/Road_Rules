@@ -361,7 +361,7 @@ CHANGELOG = [
             "PRIMARY: Alu-Cab 270° Shadow Awning RHS (passenger side, $1,050) — "
             "covers rear barn doors and full passenger side simultaneously in one 45-second "
             "deploy. 10 m² (107 sq ft), 315gsm polyester, 600mm water column, freestanding, "
-            "silver reflective coating. Slides the Shower Cube mounts adjacent. "
+            "silver reflective coating. Shower Cube mounts on LHS (driver side) under the OVS 180 awning. "
             "SECONDARY: 180° awning LHS (driver side, $650) — covers driver side independently. "
             "Deployed together: full rear + both sides covered. "
             "SHOWER: Alu-Cab Shower Cube ($550) mounts to RHS rack adjacent to the 270° awning. "

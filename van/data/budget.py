@@ -146,12 +146,12 @@ STAGE_3 = [
      "notes": "Covers rear + full passenger side. 45-second deploy, one person, freestanding. Mounts to Aluminess rack via load bar brackets (included or separate)."},
     {"item": "Alu-Cab roof rack load bar brackets for 270° awning",
      "category": "Awning", "est": 85,   "actual": None, "status": "planned"},
-    {"item": "Roam or OVS HD Nomadic 180° awning LHS — driver side",
+    {"item": "OVS HD Nomadic 180° awning LHS — driver side",
      "category": "Awning", "est": 650,  "actual": None, "status": "planned",
-     "notes": "Driver side independent coverage. Combined with 270° RHS: full rear + both sides covered."},
-    {"item": "Alu-Cab Shower Cube + roof rack mounting brackets",
+     "notes": "Overhead cover for Shower Cube on driver side. Combined with 270° RHS: full rear + both sides covered. Each deploys independently."},
+    {"item": "Alu-Cab Shower Cube + LHS roof rack mounting brackets",
      "category": "Awning", "est": 550,  "actual": None, "status": "planned",
-     "notes": "9kg. Mounts to RHS rack adjacent to 270° awning. Shower, changing room, privacy cube. 43L x 36W x 74-94H inches open."},
+     "notes": "9kg. Mounts to LHS (driver side) rack under OVS 180 awning. Separate shower zone from kitchen. 43L x 36W x 74-94H inches open."},
     # Refrigeration
     {"item": "Dometic CFX3 45L compressor fridge/freezer", "category": "Fridge","est": 950,   "actual": None, "status": "planned"},
     # Kitchen
