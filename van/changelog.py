@@ -345,5 +345,41 @@ CHANGELOG = [
         ],
     },
 
+
+    {
+        "id":       "VAN-019",
+        "date":     "2026-08",
+        "decision": "Awning system replaced — Alu-Cab 270° RHS + 180° LHS + Alu-Cab Shower Cube",
+        "reason": (
+            "Original spec had a Roam 8-ft side awning and annex room (~$670, ~20 lbs). "
+            "This only covered one side of the van. "
+            "Kevin's intent was a 270° awning with shower module providing full coverage "
+            "around the back half of the van. "
+            "No single-unit 360° awning exists — the geometry of a hinge-based system "
+            "prevents wrapping all three sides from one mounting point. "
+            "Solution: two-awning system providing equivalent full coverage. "
+            "PRIMARY: Alu-Cab 270° Shadow Awning RHS (passenger side, $1,050) — "
+            "covers rear barn doors and full passenger side simultaneously in one 45-second "
+            "deploy. 10 m² (107 sq ft), 315gsm polyester, 600mm water column, freestanding, "
+            "silver reflective coating. Slides the Shower Cube mounts adjacent. "
+            "SECONDARY: 180° awning LHS (driver side, $650) — covers driver side independently. "
+            "Deployed together: full rear + both sides covered. "
+            "SHOWER: Alu-Cab Shower Cube ($550) mounts to RHS rack adjacent to the 270° awning. "
+            "9kg aluminum/stainless, 43in x 36in x 74-94in open, adjustable height, "
+            "dual-side zipper entry, locking arms. Use as shower, changing room, or privacy cube. "
+            "Shower water from 30-gallon tank via gravity bag or 12V pump. "
+            "Total awning system: ~$2,335, ~93 lbs. "
+            "vs original Roam spec: ~$670, ~20 lbs. "
+            "Delta: +$1,665, +73 lbs for: full three-side coverage, shower capability, "
+            "private changing area, and 45-second one-person deploy."
+        ),
+        "alternatives_considered": [
+            "Single 270° awning one side only — rejected: leaves rear or one full side uncovered",
+            "Two 270° awnings LHS + RHS — considered: gives double-covered rear but +100 lbs and ~$2,200 awnings alone, more than needed",
+            "OVS 360° system (two 180° units) — considered: good coverage but rear join is panels not solid, and no shower module integration",
+            "Keep Roam 8-ft — rejected: only covers one side, no shower provision",
+        ],
+    },
+
     # ── ADD NEW ENTRIES BELOW ──────────────────────────────────────────────────
 ]

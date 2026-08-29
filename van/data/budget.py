@@ -140,8 +140,18 @@ STAGE_3 = [
     # Roof and exterior
     {"item": "Aluminess roof rack",                "category": "Roof",           "est": 1650,  "actual": None, "status": "planned"},
     {"item": "Aluminess deluxe storage box",       "category": "Roof",           "est": 480,   "actual": None, "status": "planned"},
-    {"item": "Roam 8-ft awning",                   "category": "Roof",           "est": 380,   "actual": None, "status": "planned"},
-    {"item": "Roam awning room annex",             "category": "Roof",           "est": 290,   "actual": None, "status": "planned"},
+    # Awning system — full three-side coverage (VAN-019)
+    {"item": "Alu-Cab 270° Shadow Awning RHS — passenger side (2.6m, 10m² coverage)",
+     "category": "Awning", "est": 1050, "actual": None, "status": "planned",
+     "notes": "Covers rear + full passenger side. 45-second deploy, one person, freestanding. Mounts to Aluminess rack via load bar brackets (included or separate)."},
+    {"item": "Alu-Cab roof rack load bar brackets for 270° awning",
+     "category": "Awning", "est": 85,   "actual": None, "status": "planned"},
+    {"item": "Roam or OVS HD Nomadic 180° awning LHS — driver side",
+     "category": "Awning", "est": 650,  "actual": None, "status": "planned",
+     "notes": "Driver side independent coverage. Combined with 270° RHS: full rear + both sides covered."},
+    {"item": "Alu-Cab Shower Cube + roof rack mounting brackets",
+     "category": "Awning", "est": 550,  "actual": None, "status": "planned",
+     "notes": "9kg. Mounts to RHS rack adjacent to 270° awning. Shower, changing room, privacy cube. 43L x 36W x 74-94H inches open."},
     # Refrigeration
     {"item": "Dometic CFX3 45L compressor fridge/freezer", "category": "Fridge","est": 950,   "actual": None, "status": "planned"},
     # Kitchen

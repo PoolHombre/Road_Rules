@@ -74,7 +74,11 @@ STAGE_3_COMPONENTS = [
     {"item": "Primus 27-ft tower kit",            "est_lbs": 45,   "actual_lbs": None},
     {"item": "Aluminess roof rack",               "est_lbs": 95,   "actual_lbs": None},
     {"item": "Aluminess storage box",             "est_lbs": 35,   "actual_lbs": None},
-    {"item": "Roam awning + annex",               "est_lbs": 28,   "actual_lbs": None},
+    {"item": "Alu-Cab 270° Shadow Awning RHS (2.6m)",           "est_lbs": 53, "actual_lbs": None},
+    {"item": "Alu-Cab Shower Cube + mounting brackets",          "est_lbs": 22, "actual_lbs": None},
+    {"item": "180° side awning LHS (Roam or OVS HD Nomadic)",   "est_lbs": 18, "actual_lbs": None},
+    # Total awning system: ~93 lbs vs original Roam 8-ft + annex ~28 lbs
+    # Weight increase: +65 lbs for full three-side coverage + shower capability (see VAN-019)
     {"item": "Dometic CFX3 45L fridge",           "est_lbs": 33,   "actual_lbs": None},
     {"item": "Cast iron cookware (full set)",      "est_lbs": 38,   "actual_lbs": None},
     {"item": "Jetboil + Instant Pot + misc kitchen","est_lbs": 12,  "actual_lbs": None},
