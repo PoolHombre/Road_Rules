@@ -56,6 +56,16 @@ STAGES = {
                 "Battery terminals — clean corrosion, apply dielectric grease",
                 "All lights — inspect and replace any failed bulbs",
             ],
+            "AFM Disable — PRIORITY ITEM": [
+                "Range Technology AFM Disabler (Model A10B) — plug into OBD-II port, done",
+                "  · Cost: ~$120. Eliminates AFM cylinder deactivation permanently",
+                "  · AFM is the primary cause of oil consumption on the 6.0L Vortec",
+                "  · Without disable: lifter failures, oil burning, fouled spark plugs at 100k+",
+                "  · With disable: engine runs all 8 cylinders all the time — correct for load use",
+                "  · Passive device — unplugs in seconds, leaves no trace, does not void warranty",
+                "  · Alternative: HP Tuners or EFILive tune to disable AFM in ECU permanently",
+                "  · DO THIS BEFORE THE FIRST DRIVE. Do not run the AFM system at all.",
+            ],
             "Inspection": [
                 "OBD-II diagnostic scan — document and clear all codes",
                 "Visual inspection: frame for rust, exhaust for leaks, CV boots for cracking",
@@ -65,8 +75,9 @@ STAGES = {
         },
         "notes": (
             "Do not skip Stage A. A used van with unknown service history is a liability. "
-            "The cost of Stage A (~$450) is insurance against a breakdown in the Missouri Breaks "
-            "with no cell service. "
+            "The AFM disable is the single most important item — do it before the first drive. "
+            "The cost of Stage A (~$570 including AFM disabler) is insurance against a breakdown "
+            "in the Missouri Breaks with no cell service. "
             "Document every service with receipts and mileage. Start the maintenance log."
         ),
     },
@@ -232,4 +243,169 @@ STAGES = {
             "inadequate for the actual use case."
         ),
     },
+}
+
+# ── PLATFORM RATIONALE ────────────────────────────────────────────────────────
+
+PLATFORM_RATIONALE = {
+    "vehicle":   "GMC Savana 2500 Extended, 155-inch wheelbase, RWD",
+    "engine":    "6.0L Vortec V8 (L96)",
+    "decision":  "2026-08",
+
+    "why_savana_over_alternatives": {
+        "core_argument": (
+            "For a 28-day expedition through rural Montana, North Dakota, and Wyoming, "
+            "the decisive question is not which van is most sophisticated. "
+            "It is which van a small-town mechanic with a standard parts truck can fix "
+            "by morning when something goes wrong at 9pm outside Miles City. "
+            "The answer is the Savana every time."
+        ),
+        "vs_ford_transit": (
+            "Transit is a capable platform with a proper high roof — the main thing "
+            "the Savana lacks. The 3.7L naturally aspirated V6 is the reliable engine choice "
+            "on the Transit; the EcoBoost turbo adds power but also turbo replacement risk "
+            "documented by fleet mechanics. Ford has 2,991 dealers nationwide — good coverage. "
+            "The Transit 3.7L is genuinely underpowered in a loaded extended van at elevation "
+            "on Montana passes. Not a dealbreaker but a real consideration. "
+            "The Savana wins on simplicity, payload capacity, and parts ubiquity."
+        ),
+        "vs_mercedes_sprinter": (
+            "The Sprinter diesel reaches 300,000-400,000 miles and is the dream platform "
+            "for full-time van life. But only 277 Mercedes van dealers nationwide. "
+            "Real-world consequence: owners in rural areas drive 2-3 hours each way to a "
+            "dealer for repairs, waiting days or weeks for European parts. "
+            "In the Missouri Breaks or on the Rocky Mountain Front, the nearest Sprinter "
+            "capable shop could be 200+ miles away. "
+            "The Sprinter is not the wrong van. It is the wrong van for this specific use case."
+        ),
+        "savana_advantages": [
+            "6.0L Vortec is the same engine block used in Silverado HD trucks — any shop in America knows it",
+            "Parts available at every AutoZone, NAPA, O'Reilly, and Rock Auto in the country",
+            "Architecture unchanged since 1996 — mechanics who worked on it in 2000 can work on it today",
+            "Cast-iron block, pushrod V8, no turbo, no DEF, no AdBlue — minimum failure modes",
+            "Shared drivetrain with GM HD trucks — enormous used parts ecosystem",
+            "Highest payload capacity of the three platforms",
+            "Lowest purchase price used — more budget for the build",
+        ],
+        "savana_disadvantages": [
+            "No high roof — must crawl in (significant quality-of-life compromise)",
+            "Fuel economy: 12-14 mpg loaded — worst of the three platforms",
+            "No AWD available after 2014 — RWD only on modern examples",
+            "Interior width slightly narrower than Transit or Sprinter",
+            "No standing room — limits certain build configurations",
+        ],
+    },
+
+    "why_60_vortec": (
+        "The L96 6.0L Vortec is overbuilt for its application. "
+        "Cast-iron cylinder block with 6-bolt main bearing caps, heavy-duty timing chain "
+        "validated for 200,000 miles, LS engine architecture shared with the Corvette and Camaro. "
+        "These engines routinely reach 300,000+ miles with proper maintenance. "
+        "The primary reliability risk is the AFM (Active Fuel Management) cylinder deactivation "
+        "system — which is eliminated with a $120 plug-in disabler at purchase."
+    ),
+}
+
+# ── 6.0L VORTEC KNOWN ISSUES AND PURCHASE CHECKLIST ─────────────────────────
+
+L96_KNOWN_ISSUES = {
+    "priority_1_afm": {
+        "issue":      "Active Fuel Management (AFM) — cylinder deactivation",
+        "severity":   "HIGH — address immediately at purchase",
+        "symptoms":   [
+            "Oil consumption — 1+ quart per 1,000-2,000 miles",
+            "Lifter failures — ticking, misfires, rough idle",
+            "Fouled spark plugs from oil burning",
+            "Check engine light with cylinder misfire codes",
+        ],
+        "cause": (
+            "AFM deactivates cylinders 1, 4, 6, 7 at light throttle to save fuel. "
+            "The collapsing lifters used for AFM are a known failure point. "
+            "Oil consumption accelerates as rings wear from the constant activation/deactivation. "
+            "This is GM's most documented reliability issue on the 6.0L platform."
+        ),
+        "fix": (
+            "Range Technology AFM Disabler (Model A10B) — $120, plug-and-play OBD-II device. "
+            "Disables AFM permanently without touching the ECU. "
+            "Passive device — unplugs in seconds, leaves no ECU trace. "
+            "Alternative: ECU tune via HP Tuners or EFILive — permanent, no dongle required. "
+            "DO THIS BEFORE THE FIRST DRIVE."
+        ),
+        "prevention": "Disable AFM at purchase. Use full synthetic oil. Change at 5,000 miles max.",
+    },
+
+    "priority_2_oil_consumption": {
+        "issue":    "Excessive oil consumption (high-mileage examples)",
+        "severity": "MEDIUM — monitor closely",
+        "symptoms": ["Burning more than 1 qt per 3,000 miles", "Blue smoke at startup", "Fouled plugs"],
+        "cause":    "Worn piston rings (often AFM-related), clogged PCV valve, valve stem seals",
+        "fix":      "PCV valve replacement ($15), fresh oil every 5,000 miles, monitor consumption. If rings are the cause, engine rebuild or replacement.",
+        "purchase_check": "Ask seller: 'How often do you add oil between changes?' Any answer over 1 quart per 5,000 miles is a red flag.",
+    },
+
+    "priority_3_throttle_body": {
+        "issue":    "Throttle body sensor failure",
+        "severity": "LOW-MEDIUM — common, cheap fix",
+        "symptoms": ["Surging idle", "Reduced power mode", "Hesitation on acceleration", "Check engine light"],
+        "fix":      "Throttle body cleaning ($15 DIY) or replacement ($80-200). Easy job.",
+        "purchase_check": "Scan for codes before purchase. P0121-P0123 are throttle position sensor codes.",
+    },
+
+    "priority_4_knock_sensors": {
+        "issue":    "Knock sensor failure",
+        "severity": "LOW — symptoms only under load",
+        "symptoms": ["Check engine codes P0327/P0332", "Retarded timing under load", "Slight power loss"],
+        "cause":    "Sensors mounted under the intake manifold — exposed to heat cycling",
+        "fix":      "Replacement requires intake removal. $200-400 at a shop. Not difficult DIY.",
+        "purchase_check": "Scan for P0327/P0332 codes. If present, factor repair cost into offer.",
+    },
+
+    "priority_5_exhaust_manifold": {
+        "issue":    "Exhaust manifold gasket leaks / cracked manifolds",
+        "severity": "MEDIUM — ticking sound, fumes risk",
+        "symptoms": ["Ticking sound at startup (disappears when warm)", "Exhaust smell in cab", "Visible soot near exhaust ports"],
+        "fix":      "Manifold gasket replacement ($150-300 parts + labor). Manifold replacement if cracked.",
+        "purchase_check": "Listen for ticking at cold start. Inspect manifold studs for rust/breaks.",
+    },
+
+    "priority_6_water_pump": {
+        "issue":    "Water pump failure",
+        "severity": "MEDIUM — preventive replacement warranted",
+        "symptoms": ["Coolant leak from weep hole", "Overheating", "Bearing noise"],
+        "fix":      "Water pump replacement — Stage A preventive item if original. $100-200 DIY.",
+        "purchase_check": "Check for evidence of coolant leaks around the pump. Check coolant color and condition.",
+    },
+}
+
+# ── PRE-PURCHASE INSPECTION CHECKLIST ────────────────────────────────────────
+
+PURCHASE_INSPECTION = {
+    "must_do_before_buying": [
+        "OBD-II scan — document every stored and pending code before negotiating",
+        "Oil check — pull dipstick: color (should be amber, not black), level, any milkiness (head gasket)",
+        "Coolant check — color (orange Dex-Cool), level, no oily sheen (head gasket)",
+        "Cold start — listen for: AFM tick, exhaust manifold tick, lifter noise, knocking",
+        "Full throttle test — brief, listen for knock or hesitation, watch for smoke",
+        "Transmission — smooth shifts through all gears, no slipping, no shudder",
+        "Frame inspection — lie under the van, look for rust, cracks, bent sections",
+        "Ask oil change interval and last change date — sellers who don't know are red flags",
+        "Ask about AFM oil consumption specifically: 'Does it burn oil between changes?'",
+        "Carfax and service records — verify claimed maintenance history",
+    ],
+    "target_mileage":     "80,000 – 120,000 miles",
+    "target_year":        "2010-2019 (post-AFM introduction, pre-end of Vortec production)",
+    "red_flags": [
+        "Any misfire codes (P030x) — lifter or AFM failure likely",
+        "Oil consumption over 1 quart per 3,000 miles",
+        "Milky oil or coolant — head gasket failure",
+        "Frame rust in Texas is rare but check rear sections and crossmembers",
+        "Unknown service history with high mileage",
+        "Previous fleet use with deferred maintenance (check fleet decal ghosts)",
+    ],
+    "price_target":       "$10,000 – $15,000 for a clean example in target mileage range",
+    "negotiation_note": (
+        "Any code or known issue found in the inspection is a negotiating point. "
+        "AFM lifter noise means a future repair of $1,500-3,000 — deduct accordingly. "
+        "A clean van at $13,000 is better than a questionable van at $10,000."
+    ),
 }

@@ -176,7 +176,7 @@ STAGE_4 = [
 # ── MECHANICAL STAGES ─────────────────────────────────────────────────────────
 
 MECHANICAL = {
-    "A": {"description": "Fluids, filters, ignition",          "est": 450,   "actual": None, "status": "planned"},
+    "A": {"description": "Fluids, filters, ignition + AFM disable", "est": 570, "actual": None, "status": "planned", "notes": "Includes $120 Range Technology AFM Disabler — priority item, do before first drive"},
     "B": {"description": "Interim brakes, engine management",  "est": 380,   "actual": None, "status": "planned"},
     "C": {"description": "Wilwood 4-corner brake upgrade + suspension",
           "est": 2800,  "actual": None, "status": "pending_weight",

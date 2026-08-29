@@ -160,6 +160,30 @@ Road_Rules/
 
 ---
 
+## Platform Decision — Why the Savana
+
+The GMC Savana 2500 was chosen over the Ford Transit and Mercedes Sprinter
+for one reason that outweighs all others: **expedition serviceability**.
+
+When something fails at 9pm outside Miles City, Montana, the question is not
+which van is best engineered. It is which van a small-town mechanic with a
+standard parts truck can fix by morning.
+
+- **Savana 6.0L Vortec:** any AutoZone, any shop, any town in America
+- **Ford Transit 3.7L:** good coverage but 3.7L underpowered loaded at elevation; EcoBoost adds turbo risk
+- **Mercedes Sprinter:** only 277 dealers nationwide — documented 200-mile tows to the nearest shop
+
+The Savana high roof absence is a real quality-of-life compromise.
+The serviceability advantage is a real expedition safety advantage.
+
+**AFM disable is the first action on purchase.** The Range Technology AFM Disabler
+($120, OBD-II plug-in) eliminates the primary reliability risk of the 6.0L Vortec
+before the first drive. Do not drive the van with AFM active.
+
+See van/spec/mechanical.py — PLATFORM_RATIONALE, L96_KNOWN_ISSUES, PURCHASE_INSPECTION.
+
+---
+
 ## What NOT to Change Without Asking
 
 - Departure date (July 15) — fixed by parents
@@ -168,3 +192,4 @@ Road_Rules/
 - The outdoor kitchen rule — permanent
 - The analog-first philosophy — permanent
 - Any changelog entry — append only, never edit
+- Platform choice (Savana 2500) — serviceability decision, documented in mechanical.py

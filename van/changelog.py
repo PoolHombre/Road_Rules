@@ -313,5 +313,37 @@ CHANGELOG = [
         ],
     },
 
+
+    {
+        "id":       "VAN-018",
+        "date":     "2026-08",
+        "decision": "Platform confirmed — GMC Savana 2500 6.0L Vortec. AFM disable mandatory at purchase.",
+        "reason": (
+            "Full platform comparison conducted: Savana 2500 vs Ford Transit vs Mercedes Sprinter. "
+            "Decision criterion: which platform can a small-town mechanic fix at 9pm in rural Montana. "
+            "Savana wins on expedition serviceability — 6.0L Vortec components available at any AutoZone "
+            "in any town, serviceable by any shop without special tooling, architecture unchanged since 1996. "
+            "Ford Transit 3.7L naturally aspirated is the reliable Transit engine choice (no turbo) but "
+            "is underpowered loaded at elevation on Montana passes. EcoBoost adds turbo risk documented "
+            "by fleet mechanics. "
+            "Mercedes Sprinter diesel reaches 300,000-400,000 miles but only 277 dealers nationwide — "
+            "documented real-world cases of 200-mile tows to the nearest capable shop in rural areas. "
+            "The Savana high roof absence is a genuine quality-of-life compromise — crawl-in entry "
+            "is the price paid for serviceability everywhere. "
+            "The 6.0L Vortec primary reliability risk is the AFM (Active Fuel Management) "
+            "cylinder deactivation system — causes lifter failures, oil consumption, fouled plugs. "
+            "Fix: Range Technology AFM Disabler ($120 OBD-II plug-in device) before the first drive. "
+            "With AFM disabled and proper maintenance, the 6.0L routinely reaches 300,000+ miles. "
+            "Full documentation: van/spec/mechanical.py — PLATFORM_RATIONALE, L96_KNOWN_ISSUES, "
+            "PURCHASE_INSPECTION."
+        ),
+        "alternatives_considered": [
+            "Ford Transit 3.7L — good platform, better interior, underpowered loaded at elevation",
+            "Ford Transit 3.5L EcoBoost — adds power, adds turbo failure risk per fleet mechanics",
+            "Mercedes Sprinter 2500 diesel — best longevity, worst rural serviceability",
+            "Ram ProMaster — FWD only, wrong for expedition use, rejected early",
+        ],
+    },
+
     # ── ADD NEW ENTRIES BELOW ──────────────────────────────────────────────────
 ]
